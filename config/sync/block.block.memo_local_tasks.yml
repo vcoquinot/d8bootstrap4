@@ -1,0 +1,22 @@
+uuid: b89d7284-527b-44fb-bae8-09b53efee070
+langcode: en
+status: true
+dependencies:
+  theme:
+    - memo
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: memo_local_tasks
+theme: memo
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

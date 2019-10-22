@@ -1,0 +1,18 @@
+uuid: 22d7b3a1-cc10-4865-84a4-67de8c1870f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: card
+type: card
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
