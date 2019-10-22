@@ -7470,46 +7470,31 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-body {
-  backgroubd-color: red; }
+nav.navbar {
+  background-color: transparent;
+  display: block; }
+  nav.navbar h1 {
+    text-align: center;
+    background-color: #6c757d; }
 
-h1 {
-  background-color: #6C757D;
-  color: #fff; }
+.navbar-collapse {
+  justify-content: center; }
 
-.fa-user {
-  color: #4CA745; }
-
-.fa-chevron-circle-left, .fa-chevron-circle-right {
-  color: #fff;
-  /*vertical-align :top;*/
-  /*padding : 1px;*/ }
-
-nav .btn {
-  margin: 2px; }
-  nav .btn:hover {
-    background-color: #E0A815;
-    border: #E0A815; }
-
-main h2 {
-  visibility: hidden; }
-
-#scrolling-wrapper {
-  display: flex;
-  flex-wrap: nowrap; }
-
-article {
-  background-color: #6C757D;
-  color: white; }
-
-@media screen and (max-width: 768px) {
-  #scrolling-wrapper {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto; }
-
-  .card {
-    flex-basis: 0;
-    min-width: 90vw; } }
+.card-column article {
+  background-color: #6c757d;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px; }
+  .card-column article div.field-content {
+    text-overflow: ellipsis;
+    word-wrap: break-wrap; }
+  .card-column article .views-field-title a {
+    color: white;
+    font-size: 1.5rem; }
+  .card-column article .views-field-field-answer {
+    display: none; }
+  .card-column article:hover .views-flield-field-answer {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
