@@ -1,62 +1,43 @@
-body {
-    backgroubd-color: red;
+// Logo
+nav.navbar {
+  background-color: transparent;
+  display: block;
+  h1 {
+    text-align: center;
+    background-color: $secondary;
+  }
 }
 
-// variables de couleur
-$grey_memo: #6C757D;
-$green_memo : #4CA745;
-$white: #fff;
-$yellow:#E0A815;
-
-// Title
-h1 {
-    background-color: $grey_memo;
-    color: $white;
+// Menu principal
+.navbar-collapse {
+  justify-content: center;
 }
 
-//Font-awesome
-.fa-user{
-    color: $green_memo;
-}
-
-.fa-chevron-circle-left, .fa-chevron-circle-right {
-    color: $white;
-    /*vertical-align :top;*/
-    /*padding : 1px;*/
-}
-
-// Button
-nav .btn {
-    margin: 2px;
-    &:hover {
-        background-color : $yellow;
-        border: $yellow;
-    }
-}
-
-main h2{
-      visibility: hidden;
-}
-
-#scrolling-wrapper {
-   display: flex;
-   flex-wrap: nowrap;
-}
-
-article {
-    background-color: $grey_memo;
+// Colonnes
+.card-column {
+  article {
+    background-color: $secondary;
     color: white;
-    
-}
-
-@media screen and (max-width: 768px){
-    #scrolling-wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    div.field-content {
+      text-overflow: ellipsis;
+      word-wrap: break-wrap;
     }
-    .card {
-        flex-basis: 0;
-        min-width: 90vw;
+    .views-field-title {
+      a {
+        color: white;
+        font-size: 1.5rem;
+      }
     }
+    .views-field-field-answer {
+      display: none;
+    }
+    &:hover {
+      .views-flield-field-answer {
+        display: block;
+      }
+    }
+  }
 }
